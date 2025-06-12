@@ -1,8 +1,14 @@
 function firstChar(text) {
   // your code here
+	let newText = text.trim();
+	if(newText === "" || newText === " "){
+		return "";
+	}else{
+		return newText[0];
+	}
 }
 
 // Do not change the code below
 //Uncomment the following line to show the prompt popup
-//const text = prompt("Enter text:");
+const text = prompt("Enter text:");
 alert(firstChar(text));
